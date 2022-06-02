@@ -1,0 +1,11 @@
+version: '3'
+services:
+
+#Creating the DNS Service
+  dns:
+    image: azevedo.paulo/dns2:latest
+    container_name: ns2.asa.br
+    restart: unless-stopped
+    ports:
+    - "53:53/udp"
+    - "53:53/tcp"

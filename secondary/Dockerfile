@@ -17,6 +17,7 @@ RUN apt-get update \
 
 # Copy configuration files
 COPY named.conf.default-zones /etc/bind/
+COPY named.conf.options /etc/bind/
 COPY db.root /etc/bind/
 
 # Start bind9 service

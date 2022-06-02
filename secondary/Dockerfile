@@ -20,4 +20,4 @@ COPY named.conf.default-zones /etc/bind/
 COPY db.root /etc/bind/
 
 # Start bind9 service
-CMD /bin/bash -c /usr/sbin/named && while :; do sleep 10; done
+CMD /usr/sbin/named ; tail -F /dev/null

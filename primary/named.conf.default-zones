@@ -15,12 +15,12 @@ zone "." {
 zone "localhost" {
 	type master;
 	file "/etc/bind/db.local";
-	allow-transfer {192.168.1.4; }; Change to NS2 IP
 };
 
 zone "asa.br" { // Change to desired zone
 	type master;
 	file "/etc/bind/db.asa.br";	// Change to zone file path
+	allow-transfer {192.168.1.4; }; Change to NS2 IP
 };
 
 

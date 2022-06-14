@@ -15,7 +15,7 @@ zone "localhost" {
 zone "asa.br" {  // Change to desired zone
 	type slave;
 	file "/etc/bind/db.asa.br";	// Change to zone file path
-	masters {192.168.1.3;};				// Change to NS2 IP
+	masters {192.168.55.10;};				// Change to NS2 IP
 };
 
 

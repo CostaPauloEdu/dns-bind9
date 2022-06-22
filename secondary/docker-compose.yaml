@@ -10,14 +10,5 @@ services:
     ports:
     - "53:53/udp"
     - "53:53/tcp"
-    networks:
-      dns-network:
-        ipv4_address: 192.168.55.11
-
-networks:
-  dns-network:
-    driver: bridge
-    ipam:
-      driver: default
-      config:
-        - subnet: 192.168.55.0/24
+    volumes:
+      - ./secondary:/etc/bind9

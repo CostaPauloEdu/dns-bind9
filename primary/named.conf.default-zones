@@ -20,7 +20,7 @@ zone "localhost" {
 zone "asa.br" { // Change to desired zone
 	type master;
 	file "/etc/bind/db.asa.br";	// Change to zone file path
-	allow-transfer {127.0.0.1; }; //Change to NS2 IP
+	allow-transfer {SECONDARY; }; //Change to NS2 IP
 };
 
 

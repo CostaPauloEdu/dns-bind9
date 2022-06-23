@@ -19,7 +19,7 @@ The motivation for this work is to make it simple to configure a DNS server usin
 
 4. On the machine that will be the primary DNS, it is necessary to run the following command:
 
-     	bash primary.sh 192.168.1.6 192.168.1.7
+     	bash setu_primary.sh 192.168.1.6 192.168.1.7
 
 Where, 192.168.1.6 is an example of IP address (DNS1) and 192.168.1.7 is an example of IP address (DNS2).
 
@@ -27,7 +27,7 @@ If the IP address (DNS2) is not entered, then IP 127.0.0.1 will be assigned.
 
 5. On the machine that will be the secondary DNS, it is necessary to run the following command:
 
-     	bash secondary.sh 192.168.1.6
+     	bash setup_secondary.sh 192.168.1.6
 
 Where, 192.168.1.6 is an example of IP address (DNS1)
 
@@ -36,3 +36,13 @@ Where, 192.168.1.6 is an example of IP address (DNS1)
 Using the dig command, is possbile to verify the registers presents on the DNS Servers:
 
      	dig asa.br
+
+### How to start/stop/restart the DNS Server
+
+For to start, stop or restart the DNS service, it is necessary to run the followings commands:
+
+     	bash service.sh primary start
+     	
+		bash service.sh primary stop
+     	
+		bash service.sh primary restart

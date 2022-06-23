@@ -15,5 +15,6 @@ RUN apt-get update \
   iputils-ping \
   procps
 
+
 # Start bind9 service
 CMD /usr/sbin/named ; tail -F /dev/null

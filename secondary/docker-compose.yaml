@@ -11,4 +11,4 @@ services:
     - "53:53/udp"
     - "53:53/tcp"
     volumes:
-      - ./secondary:/etc/bind9
+      - ./:/etc/bind

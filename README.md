@@ -46,3 +46,18 @@ For to start, stop or restart the DNS service, it is necessary to run the follow
 		bash service.sh primary stop
      	
 		bash service.sh primary restart
+
+     	bash service.sh secondary start
+     	
+		bash service.sh secondary stop
+     	
+		bash service.sh secondary restart
+
+### How to delete container
+
+For to delete container, it is necessary to run the following command:
+
+     	bash delete_container.sh primary
+
+     	bash delete_container.sh secondary
+	

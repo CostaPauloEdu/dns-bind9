@@ -3,8 +3,7 @@ services:
 
 #Creating the DNS Service
   dns:
-    build: .
-    image: azevedo.paulo/dns2:latest
+    image: dns:latest
     container_name: ns2.asa.br
     restart: unless-stopped
     ports:

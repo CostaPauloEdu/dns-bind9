@@ -12,12 +12,8 @@ The motivation for this work is to make it simple to configure a DNS server usin
 
      	cd dns-bind9/
 
-3. Modify the IPv4 Addresses in three files (in the places where you have the comment to change):
-    - primary/db.asa.br
-    - primary/named.conf.default-zones
-    - secondary/named.conf.default-zones
 
-4. On the machine that will be the primary DNS, it is necessary to run the following command:
+3. On the machine that will be the primary DNS, it is necessary to run the following command:
 
      	bash setu_primary.sh 192.168.1.6 192.168.1.7
 

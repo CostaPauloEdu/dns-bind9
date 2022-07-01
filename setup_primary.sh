@@ -17,5 +17,4 @@ else
     sed -i "s/SECONDARY/$2/" named.conf.default-zones
 fi
 
-docker build . -t dns
 docker-compose up -d

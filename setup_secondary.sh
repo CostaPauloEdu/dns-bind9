@@ -9,5 +9,4 @@ else
     sed -i "s/PRIMARY/$1/" named.conf.default-zones
 fi
 
-docker build -t azevedo.paulo/dns:latest .
 docker-compose up -d

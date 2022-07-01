@@ -3,7 +3,9 @@ services:
 
 #Creating the DNS Service
   dns:
-    image: dns:latest
+    build:
+      context: ./..  
+    image: dns.asa.br:latest
     container_name: ns1.asa.br
     restart: unless-stopped
     ports:
